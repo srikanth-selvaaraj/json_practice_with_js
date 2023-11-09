@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = '{"1":"srikanth","gender":"Male","is married":false,"marks":[{"English":95,"Description":"Very Good"},{"Maths":15,"Description":"Very Poor"}],"address":{"street":"cherry road","city":"salem","pincode":636007}}';
+
+        var O = JSON.parse(str);
+        //dot(.) notation
+        document.write("<br/> Name: "+ O.name); //because the key is a number
+        document.write("<br/> address: "+ O.address.street);
+        document.write("<br/> Married: "+ O.ismarried);
+        document.write("<br/> English: "+ O.marks[0].English);
+        document.write("<br/> English: "+ O.marks[0].Description);
+        document.write("<br/>");
+
+        //square notation if key is a number or it have a space in it.
+        document.write("<br/> Name: "+ O["1"]);
+        document.write("<br/> address: "+ O["address"]["street"]);
+        document.write("<br/> Married: "+ O["is married"]);
+        document.write("<br/> English: "+ O.marks[0]["English"]);
+        var sub = "Description";
+        document.write("<br/> English: "+ O.marks[0][sub]);
+
+        
+    
+    </script>
+</body>
+</html>

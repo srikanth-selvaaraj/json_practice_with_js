@@ -1,0 +1,20 @@
+{
+    "name":"srikanth",
+    "gender":"Male",
+    "ismarried":false,
+    "marks":[
+        {
+            "English":95,
+            "Description":"Very Good"
+        },
+        {
+            "Maths":15,
+            "Description":"Very Poor"
+        }
+    ],
+    "address":{
+        "street":"cherry road",
+        "city":"salem",
+        "pincode":636007
+    }
+}
